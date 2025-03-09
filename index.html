@@ -163,45 +163,91 @@
         <p class="lead"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi modi iste soluta ducimus
           debitis earum quidem, aliquid unde, reprehenderit distinctio dignissimos iusto, adipisci itaque. Error earum
           sed asperiores culpa odit?</p>
-          <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#Modalcrearcuenta">¡Creá tu cuenta ahora!</button>
+        <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#Modalcrearcuenta">¡Creá tu
+          cuenta ahora!</button>
       </div>
     </section>
-   
+
+    <section class="container">
+      <div class="row">
+        <div class="col-4">
+          <img src="/img/iphone-illustration-sec.png" alt="Ilustracion iPhone" class="w-75">
+        </div>
+        <div class="col-8 mt-4">
+          <h2 class="fs-1">¡Tu seguridad, nuestra prioridad!</h2>
+          <p class="lead mt-4 fs-3"> Seguímos las mejores prácticas en cyberseguridad ¡sin complicarte tu operación diaria!</p>
+          <!-- Cards iPhone -->
+         <div class="row">
+            <div class="col-5 border border-secondary rounded-5 p-3 me-4 mb-4">
+              <i class="bi bi-eye text-danger fs-1"></i>
+              <h3 class="my-3">Biometría</h3>
+              <p class="lead">Nuestra tecnología te permite acceder a tu cuenta usando tu huella digital o tu cara.</p>
+            </div>
+
+            <div class="col-5 border border-secondary rounded-5 p-3 mb-4">
+              <i class="bi bi-fingerprint text-primary fs-1"></i>
+              <h3 class="my-3">Biometría</h3>
+              <p class="lead">Usamos un token invisible para todas las operaciones que hagas.</p>
+            </div>
+
+               <!-- Cards iPhone2 -->
+          <div class="col-5 border border-secondary rounded-5 p-3 me-4">
+            <i class="bi bi-puzzle text-info fs-1"></i> 
+            <h3 class="my-3">Personal</h3>
+            <p class="lead">Vas a poder ingresar desde un dispositivo a la vez en tu cuenta.</p>
+          </div>
+
+          <div class="col-5 border border-secondary rounded-5 p-3">
+            <i class="bi bi-robot text-success fs-1"></i>
+            <h3 class="my-3">100% encriptado</h3>
+            <p class="lead">Todas las transacciones que hagas son encriptadas para tu mayor seguridad.</p>
+          </div>
+
+          </div>
+
+        </div>
+
+    </section>
+
   </main>
-   <!-- Modal  creá tu cuenta-->
-<div class="modal fade" id="Modalcrearcuenta" tabindex="-1" aria-labelledby="ModalcrearcuentaLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h2 class="modal-title fs-5" id="ModalcrearcuentaLabel">¡Creá tu cuenta!</h2>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <p>Completá los siguientes datos para crear tu cuenta:</p>
-        <form>
-          <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-          </div>
-          <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1">
-          </div>
-          <div class="mb-3 form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">Check me out</label>
-          </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+  <!-- Modal  creá tu cuenta-->
+  <div class="modal fade" id="Modalcrearcuenta" tabindex="-1" aria-labelledby="ModalcrearcuentaLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5" id="ModalcrearcuentaLabel">¡Creá tu cuenta!</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Completá los siguientes datos para crear tu cuenta:</p>
+          <form>
+            <div class="mb-3">
+              <label for="apellido" class="w-100 mb-2">Nombre y Apellido:</label>
+              <input type="text" class="w-100 border rounded-2 p-2 bg-light-subtle" minlength="3" maxlength="40"
+                placeholder="Ej: Juan Perez" id="apellido" required />
+            </div>
+            <div class="mb-3">
+              <label for="email">Email</label>
+              <input type="email" class="w-100 border rounded-2 p-2 bg-light-subtle"
+                placeholder="Ej: juanperez@mail.com" id="email" minlength="8" maxlength="350" required />
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Creá una contraseña:</label>
+              <input type="password" class="form-control bg-light-subtle" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Repetí la contraseña:</label>
+              <input type="password" class="form-control bg-light-subtle" id="exampleInputPassword1">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">¡Enviar!</button>
+        </div>
       </div>
     </div>
   </div>
-</div>
   <footer class="bg-dark-subtle py-3">
     <div class="container">
       <div class="d-flex gap-3 justify-content-center justify-content-md-start">
